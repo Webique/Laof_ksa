@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAOF Breakfast</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <!-- Logo and Title -->
+      <div class="logo-section">
+        <img src="assets/logo.png" alt="LAOF Logo" class="logo">
+        <span class="cafe-name">LAOF</span>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Our Menu</a></li>
+          <li><a href="#hours">Opening Hours</a></li>
+          <li><a href="#branches">Our Branches</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Hamburger Menu -->
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Image -->
+  <section class="hero">
+    <img src="assets/hero-image.jpg" alt="LAOF Hero Image" class="hero-image">
+    <div class="hero-overlay">
+      <h1 class="hero-title">LAOF</h1>
+    </div>
+  </section>
+
+  <section id="about" class="who-we-are animated-section">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <p class="section-description">
+        At LAOF, we serve more than just breakfast—we create experiences designed to energize your day. With a focus on fresh ingredients and hearty flavors, we’re here to make every morning special.
+      </p>
+      <p class="section-description">
+        From sunrise to your first bite, LAOF is dedicated to providing you with a memorable breakfast journey.
+      </p>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="menu" class="menu-section">
+    <div class="menu-background"></div>
+    <div class="container">
+      <h2 class="section-title">Our Menu</h2>
+      <p class="section-description">
+        Explore our delicious breakfast offerings, from classic favorites to creative twists on morning essentials.
+      </p>
+      <a href="menu.html" class="menu-button">View Full Menu</a>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="hours" class="opening-hours">
+    <div class="container">
+      <h2 class="section-title">Opening Hours</h2>
+      <p class="section-description">Start your day with us! Our opening hours are listed below:</p>
+      <div class="hours-table">
+        <div class="day">
+          <span class="day-name">Every Day</span>
+          <span class="day-time">6:00 AM - 9:30 PM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="branches" class="branches-section">
+    <div class="container">
+      <h2 class="section-title">Our Branches</h2>
+      <p class="section-description">Visit us at one of our two branches in Riyadh.</p>
+      <button id="toggle-branches-btn" class="toggle-branches-btn">View Branches</button>
+      <div id="branches-dropdown" class="branches-dropdown hidden">
+        <div class="branch-card">
+          <img src="assets/location-icon.png" alt="Qurtubah Branch" class="branch-image">
+          <h3 class="branch-name">Qurtubah</h3>
+          <p class="branch-address">Said Ibn Zayd Rd, Qurtubah, Riyadh 13248</p>
+          <a href="https://www.google.com/maps?q=LAOF,+Said+Ibn+Zayd+Rd,+Qurtubah,+Riyadh+13248&ftid=0x3e2efd0f5ab6574f:0x2e662fb5851a93da&hl=en-SA&gl=sa&entry=gps&lucs=,47071704&g_ep=CAISBjYuNzQuMhgAINeCAyoJLDQ3MDcxNzA0QgJTQQ%3D%3D&g_st=ic" class="branch-link" target="_blank">View Location</a>
+        </div>
+        <div class="branch-card">
+          <img src="assets/location-icon.png" alt="Olaya Branch" class="branch-image">
+          <h3 class="branch-name">Olaya</h3>
+          <p class="branch-address">Olaya District, Riyadh</p>
+          <a href="#" class="branch-link" target="_blank">View Location</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <h2 class="section-title">Our Gallery</h2>
+      <p class="section-description">
+        Take a look at the inviting atmosphere and mouthwatering breakfast moments at LAOF.
+      </p>
+      <div class="gallery-slider">
+        <div class="slides">
+          <img src="assets/image1.jpg" alt="Gallery Image 1">
+          <img src="assets/image2.jpg" alt="Gallery Image 2">
+          <img src="assets/image3.jpg" alt="Gallery Image 3">
+          <img src="assets/image4.jpg" alt="Gallery Image 4">
+          <img src="assets/image5.jpg" alt="Gallery Image 5">
+          <img src="assets/image6.jpg" alt="Gallery Image 6">
+          <img src="assets/image7.jpg" alt="Gallery Image 7">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <footer id="contact" class="contact-footer">
+    <div class="container">
+      <h2 class="footer-title">Contact Us</h2>
+      <p class="footer-description">
+        Stay in touch with LAOF. Reach us through our social media and messaging apps.
+      </p>
+      <div class="social-icons">
+        <a href="https://wa.me/0539342044" target="_blank" class="social-link">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/laof_ksa" target="_blank" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://tiktok.com/@laof_ksa" target="_blank" class="social-link">
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
