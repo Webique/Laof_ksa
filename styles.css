@@ -1581,3 +1581,41 @@ body {
     transform: translateY(1px);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
+.popup-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.popup-modal.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popup-modal.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+/* Prevent Text Scroll Globally */
+body, h1, h2, h3, p, div, span, a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Allow wrapping for specific text types where needed */
+p, .item-name, .item-price, .category-title {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+}

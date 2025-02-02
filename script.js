@@ -68,22 +68,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000); // Change slide every 3 seconds
 });
 
-// Pop-up Functions for Menu Items
-function showPopup(imageSrc, itemName, itemPrice) {
-    document.getElementById('popup-image').src = imageSrc;
-    document.getElementById('popup-item-name').textContent = itemName;
-    document.getElementById('popup-item-price').textContent = itemPrice;
-    document.getElementById('popup-modal').classList.remove('hidden');
+function showPopup(menuItem) {
+    // Get elements inside the popup
+    const popupModal = document.getElementById('popup-modal');
+    const popupImage = document.getElementById('popup-image');
+    const popupItemName = document.getElementById('popup-item-name');
+    const popupItemPrice = document.getElementById('popup-item-price');
+
+    // Extract details from the clicked item
+    const itemImage = menuItem.querySelector('img').src;
+    const itemName = menuItem.querySelector('.item-name').textContent;
+    const itemPrice = menuItem.querySelector('.item-price').textContent;
+
+    // Set the popup content
+    popupImage.src = itemImage;
+    popupItemName.textContent = itemName;
+    popupItemPrice.textContent = itemPrice;
+
+    // Show the modal
+    popupModal.classList.remove('hidden');
+    popupModal.classList.add('show');
 }
 
 function hidePopup() {
-    document.getElementById('popup-modal').classList.add('hidden');
+    const popupModal = document.getElementById('popup-modal');
+    popupModal.classList.remove('show');
+    popupModal.classList.add('hidden');
 }
-
-// Add event listener to close the pop-up when clicking outside of it
-document.getElementById('popup-modal').addEventListener('click', hidePopup);
-
-// Prevent closing the pop-up when clicking inside the content area
-document.querySelector('.popup-content').addEventListener('click', (e) => {
-    e.stopPropagation();
-});
