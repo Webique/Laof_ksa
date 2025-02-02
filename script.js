@@ -23,7 +23,7 @@ navLinksItems.forEach(link => {
 
         // Add extra offset for smaller screens (adjust value as needed)
         if (window.innerWidth <= 768) {
-            offset += 20; // Add 10px for phones and smaller devices
+            offset += 20; // Add extra offset for phones
         }
 
         // Scroll to the target section with adjusted offset
@@ -40,18 +40,20 @@ navLinksItems.forEach(link => {
 });
 
 // Close Menu When Clicking Outside
-document.addEventListener('click', (e) => {
+document.addEventListener('click', () => {
     if (navLinks.classList.contains('active')) {
         hamburger.classList.remove('active'); // Reset hamburger animation
         navLinks.classList.remove('active'); // Close dropdown
     }
 });
 
+// Toggle Branches Dropdown
 document.getElementById("toggle-branches-btn").addEventListener("click", function () {
     const dropdown = document.getElementById("branches-dropdown");
     dropdown.classList.toggle("show");
 });
 
+// Automatic Gallery Slider
 document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelector('.gallery-slider .slides');
     const slideImages = document.querySelectorAll('.gallery-slider img');
@@ -64,4 +66,24 @@ document.addEventListener('DOMContentLoaded', () => {
         currentIndex = (currentIndex + 1) % slideCount;
         slides.style.transform = `translateX(-${currentIndex * 100}%)`;
     }, 3000); // Change slide every 3 seconds
+});
+
+// Pop-up Functions for Menu Items
+function showPopup(imageSrc, itemName, itemPrice) {
+    document.getElementById('popup-image').src = imageSrc;
+    document.getElementById('popup-item-name').textContent = itemName;
+    document.getElementById('popup-item-price').textContent = itemPrice;
+    document.getElementById('popup-modal').classList.remove('hidden');
+}
+
+function hidePopup() {
+    document.getElementById('popup-modal').classList.add('hidden');
+}
+
+// Add event listener to close the pop-up when clicking outside of it
+document.getElementById('popup-modal').addEventListener('click', hidePopup);
+
+// Prevent closing the pop-up when clicking inside the content area
+document.querySelector('.popup-content').addEventListener('click', (e) => {
+    e.stopPropagation();
 });

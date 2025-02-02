@@ -7,15 +7,15 @@
 
 /* Theme Colors */
 :root {
-    --primary-color: #C2CC96; /* Light Green */
+    --primary-color: #000000; /* Light Green */
     --background-color: #FCF6ED; /* Light Beige */
     --hover-color: #E28C67; /* Orange */
     --secondary-font-color: #99A373; /* Dark Green */
 }
 
-/* Font Import */
-body {
-    font-family: 'Sporting-Grotesque', sans-serif;
+/* Global Font Style */
+body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     background-color: var(--background-color);
     color: var(--primary-color);
     line-height: 1.6;
@@ -24,6 +24,8 @@ body {
 
 /* Header Styling */
 .main-header {
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
+    background-color: var(--background-color);
     position: fixed;
     width: 100%;
     background-color: var(--background-color);
@@ -33,6 +35,8 @@ body {
 }
 
 .main-header .container {
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
+    background-color: var(--background-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,6 +58,8 @@ body {
 }
 
 .cafe-name {
+
+    
     font-size: 2rem;
     font-weight: 700;
     color: var(--primary-color);
@@ -73,11 +79,13 @@ body {
 }
 
 .nav-links a {
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
+
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 600; /* Thicker font weight */
     letter-spacing: 0.5px;
-    color: var(--secondary-font-color);
+    color: var(--primary-color);
     transition: all 0.3s ease-in-out;
 }
 
@@ -151,6 +159,8 @@ body {
     }
 
     .nav-links a {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
+
         font-size: 1.5rem; /* Slightly larger for mobile */
     }
 }
@@ -181,7 +191,8 @@ body {
 
 /* Hero title */
 .hero-title {
-    font-family: 'Sporting-Grotesque', sans-serif;
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
+
     font-size: 4rem;
     font-weight: 800;
     color: rgba(255, 255, 255, 0.9);
@@ -254,7 +265,8 @@ body {
     color: var(--primary-color); /* Light Green */
     text-align: center;
     overflow: hidden; /* For animations */
-    font-family: 'Sporting-Grotesque', sans-serif; /* Font applied */
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
+ /* Font applied */
 }
 
 .who-we-are .container {
@@ -351,7 +363,8 @@ body {
     text-align: center;
     overflow: hidden; /* For animations */
     color: var(--primary-color); /* Light Green */
-    font-family: 'Sporting-Grotesque', sans-serif; /* Font applied */
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
+ /* Font applied */
 }
 
 .menu-section::before {
@@ -377,6 +390,7 @@ body {
 
 /* Section Title */
 .menu-section .section-title {
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     font-size: 3.5rem; /* Increased size */
     font-weight: 800; /* Thicker font */
     text-transform: uppercase;
@@ -390,6 +404,7 @@ body {
 
 /* Section Description */
 .menu-section .section-description {
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     font-size: 1.6rem; /* Bigger size */
     font-weight: 500; /* Thicker */
     line-height: 2;
@@ -403,6 +418,7 @@ body {
 
 /* Menu Button */
 .menu-section .menu-button {
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     display: inline-block;
     padding: 1.2rem 2.5rem;
     font-size: 1.4rem;
@@ -432,10 +448,12 @@ body {
     }
 
     .menu-section .section-title {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 3rem;
     }
 
     .menu-section .menu-button {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 1.3rem;
         padding: 1rem 2rem;
     }
@@ -447,10 +465,12 @@ body {
     }
 
     .menu-section .section-title {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 2.5rem;
     }
 
     .menu-section .menu-button {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 1.2rem;
         padding: 0.9rem 1.8rem;
     }
@@ -462,14 +482,17 @@ body {
     }
 
     .menu-section .section-title {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 2rem;
     }
 
     .menu-section .section-description {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 1.2rem; /* Increased size on phones */
     }
 
     .menu-section .menu-button {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 1.2rem; /* Larger button text on phones */
         padding: 0.8rem 1.5rem;
     }
@@ -481,7 +504,8 @@ body {
     background-color: var(--background-color); /* Light Beige */
     text-align: center;
     overflow: hidden;
-    font-family: 'Sporting-Grotesque', sans-serif; /* Font applied */
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
+ /* Font applied */
 }
 
 .opening-hours .container {
@@ -492,6 +516,7 @@ body {
 
 /* Section Title */
 .opening-hours .section-title {
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     font-size: 3.5rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -502,6 +527,7 @@ body {
 
 /* Section Description */
 .opening-hours .section-description {
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 2;
@@ -521,6 +547,7 @@ body {
 .day {
     display: flex;
     justify-content: space-between;
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     align-items: center;
     font-size: 1.8rem;
     font-weight: 600;
@@ -545,6 +572,7 @@ body {
     }
 
     .opening-hours .section-title {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 3rem;
     }
 
@@ -554,6 +582,7 @@ body {
 
     .day {
         font-size: 1.6rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 }
 
@@ -563,6 +592,7 @@ body {
     }
 
     .opening-hours .section-title {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 2.5rem;
     }
 
@@ -572,6 +602,7 @@ body {
 
     .day {
         font-size: 1.4rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         flex-direction: column;
         text-align: center;
     }
@@ -588,15 +619,18 @@ body {
     }
 
     .opening-hours .section-title {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 2rem;
     }
 
     .section-description {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 1.2rem; /* Increased text size on phones */
     }
 
     .day {
         font-size: 1.2rem; /* Set to 1.2rem */
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 }
 /* Branches Section */
@@ -604,7 +638,8 @@ body {
     padding: 5rem 2rem;
     background-color: var(--background-color);
     text-align: center;
-    font-family: 'Sporting-Grotesque', sans-serif; /* Font applied */
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
+ /* Font applied */
 }
 
 .branches-section .container {
@@ -613,9 +648,18 @@ body {
     padding: 0 var(--global-padding);
 }
 
+.branch-map {
+    width: 100%;
+    height: 300px; /* Adjust height */
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px 8px 0 0;
+}
+
 /* Section Title */
 .branches-section .section-title {
     font-size: 3.5rem; /* Larger size */
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -626,18 +670,20 @@ body {
 /* Section Description */
 .branches-section .section-description {
     font-size: 1.6rem; /* Bigger size */
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     font-weight: 500;
     line-height: 2;
     color: var(--secondary-font-color);
     margin: 1.5rem 0 2.5rem 0;
 }
 
-/* Branches Grid */
 .branches-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    grid-template-columns: repeat(3, 1fr); /* Adjust this based on design */
     gap: 2rem;
+    justify-items: center; /* Center each branch card horizontally */
 }
+
 
 /* Branch Card */
 .branch-card {
@@ -673,6 +719,7 @@ body {
 .branch-name {
     font-size: 2rem;
     font-weight: 700;
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     color: var(--primary-color);
     margin: 1rem 0 0.5rem;
 }
@@ -680,6 +727,7 @@ body {
 /* Branch Address */
 .branch-address {
     font-size: 1.4rem;
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     font-weight: 500;
     color: var(--secondary-font-color);
     margin-bottom: 1.5rem;
@@ -690,6 +738,7 @@ body {
     display: inline-block;
     margin-top: auto;
     font-size: 1.4rem;
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     font-weight: 700;
     text-transform: uppercase;
     color: var(--primary-color);
@@ -740,10 +789,12 @@ body {
     }
 
     .branches-section .section-title {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 2rem;
     }
 
     .branches-section .section-description {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 1.2rem; /* Increased size on phones */
     }
 
@@ -757,13 +808,17 @@ body {
 
     .branch-name {
         font-size: 1.5rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 
     .branch-address {
         font-size: 1.2rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
+        
     }
 
     .branch-link {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 1.2rem; /* Increased size */
         padding: 0.6rem 1.2rem;
     }
@@ -774,6 +829,7 @@ body {
     background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
     color: var(--background-color); /* White text for better contrast */
     font-size: 1.4rem; /* Larger font size */
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     font-weight: 700;
     text-transform: uppercase;
     padding: 1rem 2.5rem; /* Increased padding */
@@ -806,17 +862,20 @@ body {
 
 .branches-dropdown.show {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     opacity: 1;
-    max-height: 1000px; /* Large enough value to show all content */
+    max-height: 1000px;
+    place-items: center; /* Center each card */
     transition: all 0.5s ease;
 }
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {
     .toggle-branches-btn {
         font-size: 1.3rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         padding: 0.9rem 2rem;
     }
 
@@ -828,6 +887,7 @@ body {
 @media (max-width: 768px) {
     .toggle-branches-btn {
         font-size: 1.2rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         padding: 0.8rem 1.8rem;
     }
 
@@ -841,6 +901,7 @@ body {
     .toggle-branches-btn {
         font-size: 1.2rem; /* Set to 1.2rem on phones */
         padding: 0.7rem 1.5rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 }
 /* Gallery Section */
@@ -848,7 +909,8 @@ body {
     padding: 5rem 2rem;
     background-color: var(--background-color);
     text-align: center;
-    font-family: 'Sporting-Grotesque', sans-serif; /* Font applied */
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
+ /* Font applied */
 }
 
 .gallery-section .container {
@@ -858,8 +920,9 @@ body {
 
 /* Section Title */
 .gallery-section .section-title {
-    font-size: 3.5rem; /* Larger size */
+    font-size: 3.5rem;
     font-weight: 800;
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     text-transform: uppercase;
     color: var(--primary-color);
     margin-bottom: 2.5rem;
@@ -867,8 +930,9 @@ body {
 
 /* Section Description */
 .gallery-section .section-description {
-    font-size: 1.6rem; /* Larger size */
+    font-size: 1.6rem;
     line-height: 2;
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     color: var(--secondary-font-color);
     margin-bottom: 3rem;
 }
@@ -880,37 +944,43 @@ body {
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     width: 100%;
-    height: 500px; /* Consistent height for large screens */
+    height: 500px;
 }
 
+/* Slides Container */
 .gallery-slider .slides {
     display: flex;
+    width: 100%;
+    height: 100%;
     transition: transform 0.5s ease-in-out;
 }
 
+/* Gallery Images with Zoom Effect */
 .gallery-slider img {
-    flex-shrink: 0;
+    flex: 1 1 auto;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Maintain aspect ratio */
+    transition: transform 0.6s ease-in-out; /* Smooth zoom effect */
 }
 
-/* Move only images 4, 5, and 6 up */
-.gallery-slider .slides img:nth-child(4),
-.gallery-slider .slides img:nth-child(5),
-.gallery-slider .slides img:nth-child(6) {
-    transform: translateY(-130px);
+/* Apply zoom on hover */
+.gallery-slider:hover img {
+    transform: scale(1.1); /* Slight zoom-in */
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
     .gallery-section .section-title {
         font-size: 3rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 
     .gallery-section .section-description {
         font-size: 1.4rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
+    
 
     .gallery-slider {
         height: 400px;
@@ -923,29 +993,21 @@ body {
     }
 
     .gallery-section .section-title {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 2.5rem;
     }
 
     .gallery-section .section-description {
         font-size: 1.2rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 
     .gallery-slider {
-        height: auto; /* Allow height to adjust based on images */
+        height: 300px;
     }
 
     .gallery-slider img {
         object-fit: cover;
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    /* Reset translation for images 4, 5, and 6 */
-    .gallery-slider .slides img:nth-child(4),
-    .gallery-slider .slides img:nth-child(5),
-    .gallery-slider .slides img:nth-child(6) {
-        transform: none;
     }
 }
 
@@ -956,26 +1018,31 @@ body {
 
     .gallery-section .section-title {
         font-size: 2rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
+        
     }
 
     .gallery-section .section-description {
-        font-size: 1.2rem; /* Increased size */
+        font-size: 1.2rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 
     .gallery-slider {
-        height: auto;
+        height: 250px;
     }
 
     .gallery-slider img {
-        height: auto;
+        object-fit: cover;
     }
 }
+
 /* More Section */
 .more-section {
     padding: 5rem 2rem;
     background-color: var(--background-color);
     text-align: center;
-    font-family: 'Sporting-Grotesque', sans-serif; /* Font applied */
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
+ /* Font applied */
 }
 
 .more-section .container {
@@ -986,6 +1053,7 @@ body {
 /* Section Title */
 .more-section .section-title {
     font-size: 3.5rem; /* Larger size */
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     font-weight: 800;
     text-transform: uppercase;
     color: var(--primary-color);
@@ -995,6 +1063,7 @@ body {
 /* Section Description */
 .more-section .section-description {
     font-size: 1.6rem; /* Larger size */
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     line-height: 2;
     color: var(--secondary-font-color);
     margin-bottom: 2.5rem;
@@ -1005,6 +1074,7 @@ body {
     display: inline-block;
     background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
     color: var(--background-color); /* White text for better contrast */
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     font-size: 1.4rem; /* Larger font size */
     font-weight: 700;
     text-transform: uppercase;
@@ -1033,15 +1103,18 @@ body {
     }
 
     .more-section .section-title {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 3rem;
     }
 
     .more-section .section-description {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 1.4rem;
     }
 
     .more-button {
         font-size: 1.3rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         padding: 0.9rem 2rem;
     }
 }
@@ -1053,14 +1126,17 @@ body {
 
     .more-section .section-title {
         font-size: 2.5rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 
     .more-section .section-description {
         font-size: 1.2rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 
     .more-button {
         font-size: 1.2rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         padding: 0.8rem 1.8rem;
     }
 }
@@ -1072,14 +1148,17 @@ body {
 
     .more-section .section-title {
         font-size: 2rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 
     .more-section .section-description {
         font-size: 1.2rem; /* Consistent text size */
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 
     .more-button {
         font-size: 1.2rem; /* Consistent button size */
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         padding: 0.7rem 1.5rem;
     }
 }
@@ -1089,7 +1168,8 @@ body {
     background-color: var(--background-color);
     text-align: center;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-    font-family: 'Sporting-Grotesque', sans-serif; /* Font applied */
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
+ /* Font applied */
 }
 
 .contact-footer .container {
@@ -1103,6 +1183,7 @@ body {
     font-size: 3.5rem;
     font-weight: 800;
     text-transform: uppercase;
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     letter-spacing: 1.5px;
     margin-bottom: 2.5rem;
     color: var(--primary-color);
@@ -1112,6 +1193,7 @@ body {
 .contact-footer .footer-description {
     font-size: 1.6rem;
     font-weight: 500;
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     line-height: 2;
     color: var(--secondary-font-color);
     margin: 1.5rem 0 2.5rem 0;
@@ -1127,6 +1209,7 @@ body {
 
 .social-link {
     font-size: 2.5rem;
+    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -1153,10 +1236,12 @@ body {
 
     .contact-footer .footer-title {
         font-size: 3rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 
     .contact-footer .footer-description {
         font-size: 1.4rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 
     .social-icons {
@@ -1165,6 +1250,7 @@ body {
 
     .social-link {
         font-size: 2rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 }
 
@@ -1175,10 +1261,12 @@ body {
 
     .contact-footer .footer-title {
         font-size: 2.5rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 
     .contact-footer .footer-description {
         font-size: 1.2rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 
     .social-icons {
@@ -1187,6 +1275,7 @@ body {
 
     .social-link {
         font-size: 1.8rem;
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 }
 
@@ -1197,9 +1286,11 @@ body {
 
     .contact-footer .footer-title {
         font-size: 2rem; /* Slightly smaller but not too small */
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
 
     .contact-footer .footer-description {
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
         font-size: 1.2rem; /* Consistent description text */
     }
 
@@ -1209,5 +1300,284 @@ body {
 
     .social-link {
         font-size: 2rem; /* Large icons for better visibility */
+        font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
     }
+}
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+body {
+    font-family: 'Baloo Bhaina 2', cursive;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+/* Header */
+.main-header {
+    background-color: var(--background-color);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cafe-name {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+/* Category Title */
+.category-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+/* Menu Items Grid */
+.menu-items-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Menu Item */
+.menu-item {
+    background-color: var(--background-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.2rem;
+    width: 280px;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Item Image */
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Item Name */
+.item-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 1rem 0 0.5rem;
+}
+
+/* Item Price */
+.item-price {
+    font-size: 1.4rem;
+    color: var(--secondary-font-color);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .menu-item {
+        width: 240px;
+    }
+
+    .cafe-name {
+        font-size: 2.5rem;
+    }
+
+    .category-title {
+        font-size: 2.5rem;
+    }
+
+    .menu-item img {
+        height: 160px;
+    }
+}
+
+/* Increase container width on phones */
+@media (max-width: 768px) {
+    .menu-section {
+        padding: 3rem 2rem; /* Increase left and right padding */
+    }
+
+    .category-title {
+        font-size: 2.5rem;
+    }
+
+    .menu-item {
+        width: 260px; /* Wider on phones */
+    }
+
+    .menu-item img {
+        height: 140px;
+    }
+}
+
+/* More adjustments for smaller phones */
+@media (max-width: 480px) {
+    .menu-section {
+        padding: 2rem 2rem; /* Keep the wider padding */
+    }
+
+    .category-title {
+        font-size: 2rem;
+    }
+
+    .menu-item {
+        width: 350px;
+    }
+
+    .menu-item img {
+        height: 140px;
+    }
+
+    .item-name {
+        font-size: 1.4rem;
+    }
+
+    .item-price {
+        font-size: 1.2rem;
+    }
+}
+/* Back Button */
+.back-button-container {
+    text-align: center;
+    margin: 1.5rem 0; /* Reduced margin */
+
+}
+
+.back-button {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1.4rem; /* Smaller font size */
+    font-weight: 600; /* Slightly lighter */
+    text-transform: uppercase;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    padding: 0.7rem 2rem; /* Smaller padding */
+    border: none;
+    border-radius: 25px; /* Slightly smaller radius */
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Pop-up Modal */
+.popup-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.popup-modal.hidden {
+    display: none;
+}
+
+.popup-content {
+    background-color: var(--background-color);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.popup-content img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+.popup-content h2 {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.popup-content p {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1.4rem;
+    color: var(--secondary-font-color);
+}
+/* Close Button Styles */
+.close-button {
+    font-family: 'Baloo Bhaina 2', cursive; /* Matching font */
+    font-size: 0.9rem; /* Smaller font size */
+    font-weight: 700;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 15px;
+    padding: 0.4rem 0.8rem; /* Reduced padding */
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effect */
+.close-button:hover {
+    background-color: var(--hover-color); /* Change to hover color */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Active (pressed) Effect */
+.close-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
