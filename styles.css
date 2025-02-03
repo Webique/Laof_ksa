@@ -640,20 +640,20 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     justify-items: center;
 }
 
-/* Branch Card */
 .branch-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     background-color: var(--background-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 1.5rem;
-    height: 100%;
+    width: 340px; /* Set a consistent width */
+    height: 550px; /* Set a consistent height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .branch-card:hover {
@@ -765,6 +765,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 @media (max-width: 768px) {
     .branches-section {
         padding: 3rem 1rem;
+        
     }
 
     .branches-grid {
@@ -780,6 +781,8 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 @media (max-width: 480px) {
     .branches-section {
         padding: 2rem 1rem;
+        padding: 1.5rem 1rem; /* Reduced padding */
+
     }
 
     .branches-section .section-title {
@@ -788,6 +791,8 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 
     .branch-card {
         padding: 1rem;
+        height: 400px; /* Reduced height */
+
     }
 
     .branch-image {
