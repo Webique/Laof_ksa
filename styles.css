@@ -167,7 +167,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 60vh; /* Default height */
+    height: 60vh;
     width: 100%;
     overflow: hidden;
 }
@@ -195,27 +195,28 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 @media (max-width: 480px) {
     .hero {
         height: 42vh; /* Much shorter on phones */
+        margin-bottom: 0; /* Ensure no extra margin */
     }
 
     .hero-image {
-        object-fit: contain; /* To ensure image fits better */
+        object-fit: contain;
+    }
+
+    /* Add negative margin on the next section to reduce the gap */
+    .who-we-are {
+        padding: 1.5rem 1rem;
+        margin-top: -2rem; /* Adjust overlap to reduce gap */
     }
 }
-
-
-
-
-
 
 /* Who We Are Section */
 .who-we-are {
     padding: 5rem 2rem;
-    background-color: var(--background-color); /* Light Beige */
-    color: var(--primary-color); /* Light Green */
+    background-color: var(--background-color);
+    color: var(--primary-color);
     text-align: center;
-    overflow: hidden; /* For animations */
-    font-family: 'Baloo Bhaina 2', cursive; /* Bold, rounded, playful font */
- /* Font applied */
+    overflow: hidden;
+    font-family: 'Baloo Bhaina 2', cursive;
 }
 
 .who-we-are .container {
@@ -226,12 +227,12 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 
 /* Section Title */
 .who-we-are .section-title {
-    font-size: 3.5rem; /* Bigger size */
-    font-weight: 800; /* Thicker */
+    font-size: 3.5rem;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 1.5px; /* Slightly more spaced */
+    letter-spacing: 1.5px;
     margin-bottom: 2.5rem;
-    color: var(--primary-color); /* Light Green */
+    color: var(--primary-color);
     opacity: 0;
     transform: translateY(50px);
     animation: fadeInUp 1s ease-in-out forwards;
@@ -239,10 +240,10 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 
 /* Section Description */
 .who-we-are .section-description {
-    font-size: 1.6rem; /* Bigger size */
-    font-weight: 500; /* Thicker */
+    font-size: 1.6rem;
+    font-weight: 500;
     line-height: 2;
-    color: var(--secondary-font-color); /* Dark Green */
+    color: var(--secondary-font-color);
     margin: 2rem 0;
     opacity: 0;
     transform: translateY(50px);
@@ -269,7 +270,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     }
 
     .who-we-are .section-title {
-        font-size: 3rem; /* Still larger on tablets */
+        font-size: 3rem;
     }
 
     .who-we-are .section-description {
@@ -295,6 +296,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 @media (max-width: 480px) {
     .who-we-are {
         padding: 2rem 1rem;
+        margin-top: -7rem; /* Closer to hero section */
     }
 
     .who-we-are .section-title {
@@ -305,6 +307,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
         font-size: 1.2rem;
     }
 }
+
 /* Menu Section */
 .menu-section {
     position: relative;
