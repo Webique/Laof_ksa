@@ -1,4 +1,6 @@
 /* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&family=Patrick+Hand:wght@400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -296,7 +298,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 @media (max-width: 480px) {
     .who-we-are {
         padding: 2rem 1rem;
-        margin-top: -7rem; /* Closer to hero section */
+        margin-top: -6rem; /* Closer to hero section */
     }
 
     .who-we-are .section-title {
