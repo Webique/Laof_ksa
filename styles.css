@@ -530,7 +530,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     }
 
     .opening-hours .section-title {
-        font-size: 3rem;
+        font-size: 2.5rem; /* Adjusted for tablets */
     }
 
     .hours-table {
@@ -548,7 +548,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     }
 
     .opening-hours .section-title {
-        font-size: 2.8rem;
+        font-size: 2.2rem; /* Adjusted for mobile */
     }
 
     .hours-table {
@@ -574,7 +574,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     }
 
     .opening-hours .section-title {
-        font-size: 2.4rem;
+        font-size: 2rem; /* Smaller for small screens */
     }
 
     .opening-hours .section-description {
@@ -585,6 +585,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
         font-size: 1.4rem;
     }
 }
+
 
 /* Branches Section */
 .branches-section {
@@ -707,20 +708,52 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 }
 
 /* Toggle Button */
+/* Match View Branches Button with Menu Button */
 .toggle-branches-btn {
     display: inline-block;
-    background: linear-gradient(90deg, var(--primary-color, #007bff), var(--secondary-color, #28a745));
-    color: var(--background-color, #ffffff);
+    padding: 1.2rem 2.5rem;
     font-size: 1.4rem;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 1rem 2.5rem;
+    color: var(--background-color); /* White text */
+    background-color: var(--primary-color); /* Light Green */
     border: none;
-    border-radius: 30px;
+    border-radius: 50px;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 2.5rem;
 }
+
+.toggle-branches-btn:hover {
+    background-color: var(--hover-color); /* Pink */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .toggle-branches-btn {
+        font-size: 1.3rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .toggle-branches-btn {
+        font-size: 1.2rem;
+        padding: 0.9rem 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .toggle-branches-btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
 
 .toggle-branches-btn:hover {
     transform: translateY(-3px);
@@ -1101,13 +1134,19 @@ body, h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     transform: scale(1.2);
 }
 
-/* Section Divider */
+
+/* Improved Section Divider - Black */
 .section-divider {
-    height: 1px;
-    width: 100%;
-    background-color: var(--primary-color);
-    opacity: 0.6;
+    width: 80%;
+    height: 6px; /* Increased thickness */
+    margin: 3rem auto; /* Proper spacing */
+    background-color: #000000; /* Solid black */
+    border-radius: 10px; /* Rounded edges for a sleek look */
+    opacity: 0.9; /* Slight transparency for a refined effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
 }
+
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -1499,4 +1538,96 @@ p, .item-name, .item-price, .category-title {
     white-space: normal;
     overflow: visible;
     text-overflow: clip;
+}
+
+
+/* Delivery Section */
+.delivery-section {
+    padding: 5rem 2rem;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.delivery-section .section-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 2.5rem;
+}
+
+.delivery-section .section-description {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--secondary-font-color);
+    margin-bottom: 2rem;
+}
+
+.delivery-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Match Delivery Buttons with Other Buttons */
+.delivery-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 2.5rem; /* Same padding as other buttons */
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--background-color); /* White text */
+    background-color: var(--primary-color); /* Same background color as other buttons */
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    min-width: 250px;
+    border: none; /* Remove any border */
+}
+
+.delivery-link img {
+    height: 40px;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.delivery-link:hover {
+    background-color: var(--hover-color); /* Same hover effect */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .delivery-link {
+        font-size: 1.3rem;
+        padding: 1rem 2rem;
+        min-width: 200px;
+    }
+
+    .delivery-link img {
+        height: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .delivery-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .delivery-link {
+        font-size: 1rem;
+        padding: 0.9rem 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .delivery-link {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
 }

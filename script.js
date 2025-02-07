@@ -110,3 +110,4 @@ document.getElementById('popup-modal').addEventListener('click', hidePopup);
 document.querySelector('.popup-content').addEventListener('click', (e) => {
     e.stopPropagation();
 });
+
