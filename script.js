@@ -80,16 +80,22 @@ function showPopup(menuItem) {
     const popupImage = document.getElementById('popup-image');
     const popupItemName = document.getElementById('popup-item-name');
     const popupItemPrice = document.getElementById('popup-item-price');
+    const popupItemDescription = document.getElementById('popup-item-description');
+    const popupItemCalories = document.getElementById('popup-item-calories');
 
     // Extract item details from the clicked element
     const itemImage = menuItem.querySelector('img').src;
     const itemName = menuItem.querySelector('.item-name').textContent;
     const itemPrice = menuItem.querySelector('.item-price').textContent;
+    const itemDescription = menuItem.querySelector('.item-description')?.textContent || "No description available.";
+    const itemCalories = menuItem.querySelector('.item-calories')?.textContent || "Calories not specified.";
 
     // Update the popup content
     popupImage.src = itemImage;
     popupItemName.textContent = itemName;
     popupItemPrice.textContent = itemPrice;
+    popupItemDescription.textContent = itemDescription;
+    popupItemCalories.textContent = itemCalories;
 
     // Show the popup
     popupModal.classList.remove('hidden');
@@ -110,4 +116,5 @@ document.getElementById('popup-modal').addEventListener('click', hidePopup);
 document.querySelector('.popup-content').addEventListener('click', (e) => {
     e.stopPropagation();
 });
+
 
