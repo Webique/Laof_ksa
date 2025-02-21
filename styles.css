@@ -1362,6 +1362,28 @@ body {
     line-height: 1.5;
 }
 
+/* Force hide calories and description in menu cards */
+.menu-item .item-calories,
+.menu-item .item-description {
+    display: none !important;
+}
+
+/* Adjust Texts */
+.item-name,
+.item-price,
+.item-calories,
+.item-description {
+    background: none; /* Removes any background on text */
+    padding: 0;
+}
+
+/* Remove hover effects */
+.menu-item:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+
 /* Responsive Design */
 
 /* Tablet View */
@@ -1558,6 +1580,14 @@ body {
     color: #222; /* Darker for emphasis */
 }
 
+/* Popup Text Adjustments */
+.popup-content h2,
+.popup-content p,
+.popup-content img {
+    background: none; /* Removes individual backgrounds */
+    margin: 0.5rem 0;
+}
+
 /* Close Button Styles */
 .close-button {
     font-family: 'Sporting Grotesque', sans-serif;
@@ -1600,6 +1630,8 @@ p, .item-name, .item-price, .category-title {
     overflow: visible;
     text-overflow: clip;
 }
+
+
 
 
 /* Delivery Section */

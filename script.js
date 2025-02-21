@@ -74,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000); // Change slide every 3 seconds
 });
 
-// --- Menu Item Popup ---
 function showPopup(menuItem) {
     const popupModal = document.getElementById('popup-modal');
     const popupImage = document.getElementById('popup-image');
@@ -83,21 +82,21 @@ function showPopup(menuItem) {
     const popupItemDescription = document.getElementById('popup-item-description');
     const popupItemCalories = document.getElementById('popup-item-calories');
 
-    // Extract item details from the clicked element
+    // Extract item details
     const itemImage = menuItem.querySelector('img').src;
     const itemName = menuItem.querySelector('.item-name').textContent;
     const itemPrice = menuItem.querySelector('.item-price').textContent;
     const itemDescription = menuItem.querySelector('.item-description')?.textContent || "No description available.";
     const itemCalories = menuItem.querySelector('.item-calories')?.textContent || "Calories not specified.";
 
-    // Update the popup content
+    // Update popup content
     popupImage.src = itemImage;
     popupItemName.textContent = itemName;
     popupItemPrice.textContent = itemPrice;
     popupItemDescription.textContent = itemDescription;
     popupItemCalories.textContent = itemCalories;
 
-    // Show the popup
+    // Show popup
     popupModal.classList.remove('hidden');
     popupModal.classList.add('show');
 }
